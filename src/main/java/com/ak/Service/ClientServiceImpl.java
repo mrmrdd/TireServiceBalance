@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 import org.springframework.security.authentication.encoding.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by mrd on 07.08.2016.
@@ -17,8 +16,6 @@ public class ClientServiceImpl implements ClientService {
     @Autowired
     ClientDao clientDaoImp;
 
-    @Override
-    @Transactional
     public void addClient(Client client) {
 
         PasswordEncoder encoder = new Md5PasswordEncoder();
