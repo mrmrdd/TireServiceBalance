@@ -1,4 +1,4 @@
-package com.ak.web;
+package com.ak.controllers;
 
 import com.ak.Service.ClientService;
 import com.ak.entities.Client;
@@ -18,7 +18,7 @@ public class RegController {
     @Autowired
     private ClientService clientServiceImpl;
 
-    @RequestMapping(method = RequestMethod.GET, params = "new")
+    @RequestMapping
     public String addClientProfile(Model model) {
         model.addAttribute("client", new Client());
         return "registerNewClient";

@@ -3,6 +3,7 @@ package com.ak.entities;
 import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 /**
@@ -16,20 +17,21 @@ public class Client {
     private long id;
 
 
-    @Column(nullable = false)
-    @Size(min=2, max=30)
+    @Size(min=3, max=20,message="Username must be between 3 and 20 characters long.")
+    @Pattern(regexp="^[a-zA-Z0-9]+$",message="Username must be alphanumeric with no spaces")
     private String name;
 
+    @Size(min = 3, max = 20, message = "Username must be between 3 and 20 characters long.")
+    @Pattern(regexp = "^[a-zA-Z0-9]+$", message = "Username must be alphanumeric with no spaces.")
     private String surname;
 
-    @Column(nullable = false)
-    @Size(min=6, max=30)
+    @Size(min = 6, max = 32, message = "The password must be at least 6 characters long.")
     private String password;
 
     @Email
     private String email;
 
-    @Column(nullable = false)
+
     private String phone;
 
     private int discount;

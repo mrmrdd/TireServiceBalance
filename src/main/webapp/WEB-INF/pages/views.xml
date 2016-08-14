@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE tiles-definitions PUBLIC
-       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//RU"
        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 <tiles-definitions>
 	<definition name=".header" template="/WEB-INF/pages/tilespages/header.jsp"/>
 	<definition name=".menu" template="/WEB-INF/pages/tilespages/menu.jsp"/>
-	<definition name="congent.main" template="/WEB-INF/pages/tilespages/main.jsp"/>
-	<definition name="congent.registration" template="/WEB-INF/pages/tilespages/registration.jsp"/>
+	<definition name="content.main" template="/WEB-INF/pages/tilespages/main.jsp"/>
+	<definition name="content.registration" template="/WEB-INF/pages/tilespages/registration.jsp"/>
 	<definition name="content.done" template="/WEB-INF/pages/tilespages/done.jsp"/>
 	<definition name=".footer" template="/WEB-INF/pages/tilespages/footer.jsp"/>
 
