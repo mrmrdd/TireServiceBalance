@@ -1,12 +1,21 @@
 package com.ak.prices;
 
+import org.hibernate.annotations.Entity;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.util.List;
+
 /**
  * Created by mrd on 20.06.2016.
  */
-
+@Entity
+@Table(name="for_metal")
 public class PricelistForMetal{
 
-
+    @Id
+    @GeneratedValue
     private int id;
 
     private String nameOptions;
@@ -16,6 +25,16 @@ public class PricelistForMetal{
     private int R15;
     private int R16;
     private int R17;
+
+    private List<PricelistForMetal> forMetal;
+
+    public List<PricelistForMetal> getForMetal() {
+        return forMetal;
+    }
+
+    public void setForMetal(List<PricelistForMetal> forMetal) {
+        this.forMetal = forMetal;
+    }
 
     public int getId() {
         return id;

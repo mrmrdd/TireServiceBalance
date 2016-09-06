@@ -10,5 +10,4 @@ public interface ClientDao {
     void addClient(Client client);
 
 
-
 }

@@ -1,12 +1,20 @@
 package com.ak.prices;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * Created by mrd on 18.06.2016.
  */
-
+@Entity
+@Table(name="Price")
 public class Pricelist {
 
-
+    @Id
+    @GeneratedValue
     public int id;
 
     private String nameoptions;
