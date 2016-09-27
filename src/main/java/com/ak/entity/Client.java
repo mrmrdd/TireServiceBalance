@@ -1,4 +1,4 @@
-package com.ak.entities;
+package com.ak.entity;
 
 import org.hibernate.validator.constraints.Email;
 

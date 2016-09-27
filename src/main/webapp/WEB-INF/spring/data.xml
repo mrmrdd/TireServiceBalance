@@ -28,7 +28,7 @@
 	<bean id="sessionFactory"
 		  class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan" value="com.ak.entities" />
+		<property name="packagesToScan" value="com.ak.entity" />
 		<property name="hibernateProperties">
 			<props>
 				<prop key="dialect">org.hibernate.dialect.MySQLDialect</prop>

@@ -1,4 +1,4 @@
-package com.ak.prices;
+package com.ak.entity;
 
 import org.hibernate.annotations.Entity;
 
@@ -11,7 +11,7 @@ import java.util.List;
  * Created by mrd on 20.06.2016.
  */
 @Entity
-@Table(name="for_metal")
+@Table(name="forMetal")
 public class PricelistForMetal{
 
     @Id
@@ -91,5 +91,5 @@ public class PricelistForMetal{
     public void setR17(int r17) {
         R17 = r17;
     }
-    int x = new Integer(5);
+
 }

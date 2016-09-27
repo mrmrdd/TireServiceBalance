@@ -1,4 +1,4 @@
-package com.ak.entities.enums;
+package com.ak.entity.enums;
 
 /**
  * Created by mrd on 12.09.2016.

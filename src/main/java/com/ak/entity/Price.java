@@ -1,4 +1,4 @@
-package com.ak.prices;
+package com.ak.entity;
 
 
 import javax.persistence.Entity;
@@ -11,7 +11,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="Price")
-public class Pricelist {
+public class Price {
 
     @Id
     @GeneratedValue

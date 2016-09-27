@@ -5,7 +5,8 @@
 
 <hibernate-configuration>
     <session-factory>
-        <mapping class="com.ak.entities.Client" />
-        <mapping class="com.ak.entities.ClientList" />
+        <mapping class="com.ak.entity.Client" />
+        <mapping class="com.ak.entity.ClientList" />
+        <mapping class="com.ak.entity.Price" />
     </session-factory>
 </hibernate-configuration>

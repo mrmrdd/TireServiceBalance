@@ -1,7 +1,8 @@
-package com.ak.controllers;
+package com.ak.controller;
 
 import com.ak.Service.ClientService;
-import com.ak.entities.Client;
+import com.ak.dao.PriceDaoImpl;
+import com.ak.entity.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +17,8 @@ import javax.validation.Valid;
 public class RegController {
 
     @Autowired
-    private ClientService clientServiceImpl;
+    private ClientService clientService;
+
 
     @RequestMapping
     public String addClientProfile(Model model) {
@@ -30,7 +32,7 @@ public class RegController {
             return "registerNewClient";
         }
 
-        clientServiceImpl.addClient(client);
+        clientService.addClient(client);
         model.addAttribute("username", client.getName());
         return "done";
     }

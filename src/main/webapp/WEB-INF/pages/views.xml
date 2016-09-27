@@ -6,6 +6,7 @@
 	<definition name=".header" template="/WEB-INF/pages/tilespages/header.jsp"/>
 	<definition name=".menu" template="/WEB-INF/pages/tilespages/menu.jsp"/>
 	<definition name="content.main" template="/WEB-INF/pages/tilespages/main.jsp"/>
+	<definition name="content.price" template="/WEB-INF/pages/tilespages/price.jsp"/>
 	<definition name="content.registration" template="/WEB-INF/pages/tilespages/registration.jsp"/>
 	<definition name="content.done" template="/WEB-INF/pages/tilespages/done.jsp"/>
 	<definition name=".footer" template="/WEB-INF/pages/tilespages/footer.jsp"/>
@@ -29,5 +30,8 @@
 
 	<definition name="done" extends="baseLayout" >
 		<put-attribute name="content" value="content.done" />
+	</definition>
+	<definition name="price" extends="baseLayout" >
+		<put-attribute name="content" value="content.price" />
 	</definition>
 </tiles-definitions>

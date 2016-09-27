@@ -1,6 +1,6 @@
 package com.ak.dao;
 
-import com.ak.entities.Client;
+import com.ak.entity.Client;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

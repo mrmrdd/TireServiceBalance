@@ -19,7 +19,7 @@
 	<context:annotation-config />
 
 	<!-- Определяем папки, в которых будем автоматически искать бины-компоненты (@Component, @Service)  -->
-	<context:component-scan base-package="com.ak.dao" />
+	<context:component-scan base-package="com.ak" />
 
 	<!-- Файл с настройками ресурсов для работы с данными (Data Access Resources) -->
 	<import resource="data.xml" />
