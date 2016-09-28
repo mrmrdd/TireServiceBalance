@@ -10,7 +10,7 @@ import javax.persistence.Table;
  * Created by mrd on 18.06.2016.
  */
 @Entity
-@Table(name="Price")
+@Table(name="'")
 public class Price {
 
     @Id

@@ -24,10 +24,10 @@ public class PriceDaoImpl implements PriceDao{
         return sessionFactory.getCurrentSession();
     }
 
-    @Transactional(readOnly = true)
+
     @Override
     public List<Price> list() {
-        Query query = getCurrentSession().createQuery("SELECT * From Price");
+        Query query = getCurrentSession().createQuery("SELECT * FROM Price");
         return  (List<Price>)query.list();
     }
 }

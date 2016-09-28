@@ -24,7 +24,6 @@ public class ClientDaoImp implements ClientDao {
     }
 
     @Override
-    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addClient(Client client) {
         currentSession().save(client);
     }
