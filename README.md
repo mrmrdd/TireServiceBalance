@@ -8,5 +8,5 @@ Technologies that i'm using:
 * Spring Security
 * MySQL
 * Hibernate
-* HTML
 * CSS
+* Bootstrap
