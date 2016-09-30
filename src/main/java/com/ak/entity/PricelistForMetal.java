@@ -26,15 +26,6 @@ public class PricelistForMetal{
     private int R16;
     private int R17;
 
-    private List<PricelistForMetal> forMetal;
-
-    public List<PricelistForMetal> getForMetal() {
-        return forMetal;
-    }
-
-    public void setForMetal(List<PricelistForMetal> forMetal) {
-        this.forMetal = forMetal;
-    }
 
     public int getId() {
         return id;

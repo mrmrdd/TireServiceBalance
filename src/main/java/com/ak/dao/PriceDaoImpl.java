@@ -27,7 +27,7 @@ public class PriceDaoImpl implements PriceDao{
 
     @Override
     public List<Price> list() {
-        Query query = getCurrentSession().createQuery("SELECT * FROM Price");
+        Query query = getCurrentSession().createQuery("FROM Price");
         return  (List<Price>)query.list();
     }
 }

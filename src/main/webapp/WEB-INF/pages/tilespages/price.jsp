@@ -7,7 +7,7 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div>
+<div class="pricelist">
   <table>
     <thead>
       <tr>
@@ -22,23 +22,23 @@
         <th>R20</th>
         <th>R21</th>
         <th>R22</th>
-        <th width="100"></th>
-        <th width="100"></th>
+        <th width="200"></th>
+        <th width="200"></th>
       </tr>
     </thead>
-    <c:forEach items="${list}" var="list">
+    <c:forEach items="${list}" var="plist">
       <tr>
-        <td>list.nameoptions</td>
-        <td>list.R13</td>
-        <td>list.R14</td>
-        <td>list.R15</td>
-        <td>list.R16</td>
-        <td>list.R17</td>
-        <td>list.R18</td>
-        <td>list.R19</td>
-        <td>list.R20</td>
-        <td>list.R21</td>
-        <td>list.R22</td>
+        <td>${plist.nameoptions}</td>
+        <td>${plist.r13}</td>
+        <td>${plist.r14}</td>
+        <td>${plist.r15}</td>
+        <td>${plist.r16}</td>
+        <td>${plist.r17}</td>
+        <td>${plist.r18}</td>
+        <td>${plist.r19}</td>
+        <td>${plist.r20}</td>
+        <td>${plist.r21}</td>
+        <td>${plist.r22}</td>
       </tr>
     </c:forEach>
   </table>

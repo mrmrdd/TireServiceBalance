@@ -5,6 +5,7 @@ import com.ak.Service.PriceServiceImpl;
 import com.ak.dao.PriceDaoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,18 +20,19 @@ public class MyController {
 
 
     @RequestMapping({"/", "/index"})
-    public String showHomePage(){
+    public String showHomePage() {
         return "index";
     }
 
 
     @RequestMapping("/price")
-    public ModelAndView priceList(){
-        return new ModelAndView("price", "list", priceService.list());
+    public String priceList(Model model) {
+        model.addAttribute("list", priceService.list());
+        return "price";
     }
 
     @RequestMapping("/contacts")
-    public String contacts(){
+    public String contacts() {
         return "contacts";
     }
 }
