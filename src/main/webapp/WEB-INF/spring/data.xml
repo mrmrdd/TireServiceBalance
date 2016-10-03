@@ -22,7 +22,7 @@
 		  p:driverClassName="com.mysql.jdbc.Driver"
 		  p:url="jdbc:mysql://localhost:3306/contactman"
 		  p:username="root"
-		  p:password="root" />
+		  p:password="ufdyj" />
 
 	<!-- Настройки фабрики сессий Хибернейта -->
 	<bean id="sessionFactory"

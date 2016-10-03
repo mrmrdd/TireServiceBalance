@@ -34,7 +34,7 @@ public class RegController {
 
         clientService.addClient(client);
         model.addAttribute("username", client.getName());
-        return "done";
+        return "/done";
     }
 
 }
