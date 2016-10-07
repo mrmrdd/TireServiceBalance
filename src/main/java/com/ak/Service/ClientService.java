@@ -1,6 +1,6 @@
 package com.ak.Service;
 
-import com.ak.entities.Client;
+import com.ak.entity.Client;
 
 /**
  * Created by mrd on 07.08.2016.

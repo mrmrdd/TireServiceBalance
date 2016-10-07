@@ -1,7 +1,7 @@
 package com.ak.Service;
 
 import com.ak.dao.ClientDao;
-import com.ak.entities.Client;
+import com.ak.entity.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 import org.springframework.security.authentication.encoding.PasswordEncoder;
