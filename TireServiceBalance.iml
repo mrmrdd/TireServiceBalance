@@ -29,11 +29,6 @@
         </sourceRoots>
       </configuration>
     </facet>
-    <facet type="AspectJ" name="AspectJ">
-      <configuration>
-        <option name="weaveOnly" value="true" />
-      </configuration>
-    </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
@@ -76,6 +71,7 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.6.8" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.6.8" level="project" />
     <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
@@ -106,7 +102,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-taglibs:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-acl:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.springframework.roo:org.springframework.roo.annotations:1.0.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.6.9" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.1" level="project" />
