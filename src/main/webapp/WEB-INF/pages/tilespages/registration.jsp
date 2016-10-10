@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../tilespages/taglib.jsp"%>
-<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
+
 <div id="content">
 
   <h2>Создать учетную запись</h2>
