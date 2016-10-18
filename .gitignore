@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+out
+target
+*.iml
+TireService
+.gitignore
+.idea/
+TireService/
+TireServiceBalance.iml
+out/
+target/
