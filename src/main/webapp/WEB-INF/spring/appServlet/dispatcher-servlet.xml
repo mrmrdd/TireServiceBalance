@@ -22,7 +22,7 @@
 
     <!-- Transaction Managed dedicated for Hibernate -->
     <bean id="txManager"
-          class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 
@@ -30,12 +30,12 @@
 		  class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<property name="viewClass">
 			<value>
-				org.springframework.web.servlet.view.tiles2.TilesView
+				org.springframework.web.servlet.view.tiles3.TilesView
 			</value>
 		</property>
 	</bean>
 	<bean id="tilesConfigurer"
-		  class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		  class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<property name="definitions">
 			<list>
 				<value>/WEB-INF/pages/views.xml</value>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE tiles-definitions PUBLIC
-       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//RU"
-       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+		"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 	<definition name=".header" template="/WEB-INF/pages/tilespages/header.jsp"/>
 	<definition name="content.main" template="/WEB-INF/pages/tilespages/main.jsp"/>
